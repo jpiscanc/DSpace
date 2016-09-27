@@ -121,7 +121,6 @@
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <% } %>
 	
-<!-- CHECK: if altMetric return "Not Found" don't display the Badge -->
 <script type="text/javascript"><!--
 var j = jQuery.noConflict();
 
@@ -129,7 +128,7 @@ j(document).ready(function() {
 
 	<% if(altMetricEnabled) { %>
 	j(function () {
-	    j('div.altmetric-embed').on('altmetric:hidden', function () {
+	    j('div.altmetric-embed').on('altmetric:hide', function () {
 	    	j('div.altmetric').hide();
 	    });
 	});
